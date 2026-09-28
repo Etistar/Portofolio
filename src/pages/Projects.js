@@ -39,8 +39,8 @@ const Projects = () => {
       role: 'Front-End Developer',
       outcome: 'Successfully implemented API-driven visual elements, improving frontend asset delivery and geolocation mapping rendering.',
       technologies: ['HTML5', 'JAVASCRIPT', 'CSS', 'MAP'],
-      demoLink: '/archives/assignment 6/index.html',
-      githubLink: '/archives/assignment 6/'
+      demoLink: '/archives/PS5/assignment3.html',
+      githubLink: '/archives/PS5/'
     },
     {
       id: 4,
@@ -54,16 +54,6 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: 'Pacific Trails Resort - Extended Features',
-      description: 'An expanded iteration of the resort web project, focusing on advanced responsive grids and rich media modules.',
-      role: 'Front-End Developer',
-      outcome: 'Advanced my CSS structural skills by creating robust fluid grid patterns that preserve layout integrity during mobile scaling.',
-      technologies: ['HTML', 'CSS'],
-      demoLink: '/archives/ch10pacific/index.html',
-      githubLink: '/archives/ch10pacific/'
-    },
-    {
-      id: 6,
       title: 'Dynamic Restaurant Management Platform',
       description: 'A complete full-stack web application designed for interactive food ordering, menu alterations, and automated live analytics graphing.',
       role: 'Full-Stack Developer',
