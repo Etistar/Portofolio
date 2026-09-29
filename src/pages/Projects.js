@@ -10,7 +10,7 @@ const Projects = () => {
       outcome: 'Built a responsive digital identity and structured navigation that delivers an optimal viewing experience across all device screens.',
       technologies: ['HTML', 'CSS', 'JAVASCRIPT'],
       demoLink: '/archives/BENIN/index.html',
-      githubLink: '/archives/BENIN/'
+     // githubLink: '/archives/BENIN/'
     },
     {
       id: 1,
@@ -20,7 +20,7 @@ const Projects = () => {
       outcome: 'Successfully bridged business intelligence with web development, enabling dynamic presentation of complex enterprise data frameworks.',
       technologies: ['POWER BI', 'MS FABRIC', 'HTML', 'CSS', 'JAVASCRIPT'],
       demoLink: '/archives/HR Analytics/index.html',
-      githubLink: '/archives/HR Analytics/'
+      // githubLink: '/archives/HR Analytics/'
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ const Projects = () => {
       outcome: 'Mastered core JavaScript DOM manipulation, event capturing, and logical validations required for interactive web tools.',
       technologies: ['HTML5', 'JAVASCRIPT', 'CSS'],
       demoLink: '/archives/assignment 6/index.html',
-      githubLink: '/archives/assignment 6/'
+      //githubLink: '/archives/assignment 6/'
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ const Projects = () => {
       outcome: 'Successfully implemented API-driven visual elements, improving frontend asset delivery and geolocation mapping rendering.',
       technologies: ['HTML5', 'JAVASCRIPT', 'CSS', 'MAP'],
       demoLink: '/archives/PS5/assignment3.html',
-      githubLink: '/archives/PS5/'
+      //githubLink: '/archives/PS5/'
     },
     {
       id: 4,
@@ -50,7 +50,7 @@ const Projects = () => {
       outcome: 'Delivered clean, standard-compliant semantic markup achieving 100% cross-browser compatibility and structural alignment.',
       technologies: ['HTML', 'CSS'],
       demoLink: '/archives/ch10pacific/index.html',
-      githubLink: '/archives/ch10pacific/'
+      //githubLink: '/archives/ch10pacific/'
     },
     {
       id: 5,
@@ -60,7 +60,7 @@ const Projects = () => {
       outcome: 'Engineered a secure relational CRUD system connecting backend state workflows to optimized chart representations in real-time.',
       technologies: ['Node.js', 'Express', 'React', 'Chart.js', 'PostgreSQL'],
       demoLink: '/archives/EtienneZ_301559049_A3/about.html',
-      githubLink: '/archives/EtienneZ_301559049_A3/'
+      //githubLink: '/archives/EtienneZ_301559049_A3/'
     }
   ];
 
