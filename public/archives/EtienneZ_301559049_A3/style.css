@@ -32,7 +32,7 @@ section {
 /* Le conteneur principal sert de point de référence */
 .banner-bg {
     position: relative; /* Indispensable pour positionner les éléments à l'intérieur */
-    background-image: url('images/restaurant.PNG'); /* Votre image de fond actuelle */
+    background-image: url('/archives/EtienneZ_301559049_A3/images/restaurant.png'); /* Votre image de fond actuelle */
     background-size: cover;
     background-position: center;
     height: 350px; /* Ajustez la hauteur selon votre image */

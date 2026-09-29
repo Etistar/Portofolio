@@ -12,16 +12,16 @@ const Projects = () => {
       demoLink: '/archives/BENIN/index.html',
      // githubLink: '/archives/BENIN/'
     },
-    {
-      id: 1,
-      title: 'Human Resources Analytics Dashboard',
-      description: 'An interactive HR business intelligence project embedding functional corporate metrics, staffing analytics, and organizational charts.',
-      role: 'Data Analyst & Developer',
-      outcome: 'Successfully bridged business intelligence with web development, enabling dynamic presentation of complex enterprise data frameworks.',
-      technologies: ['POWER BI', 'MS FABRIC', 'HTML', 'CSS', 'JAVASCRIPT'],
-      demoLink: '/archives/HR Analytics/index.html',
+    // {
+     //  id: 1,
+     //  title: 'Human Resources Analytics Dashboard',
+     //  description: 'An interactive HR business intelligence project embedding functional corporate metrics, staffing analytics, and organizational charts.',
+     //  role: 'Data Analyst & Developer',
+     //  outcome: 'Successfully bridged business intelligence with web development, enabling dynamic presentation of complex enterprise data frameworks.',
+     //  technologies: ['POWER BI', 'MS FABRIC', 'HTML', 'CSS', 'JAVASCRIPT'],
+      // demoLink: '/archives/HR Analytics/index.html',
       // githubLink: '/archives/HR Analytics/'
-    },
+    // },
     {
       id: 2,
       title: 'BugSmasher Interactive App',
