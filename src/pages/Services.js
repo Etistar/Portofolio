@@ -4,35 +4,38 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      title: 'Front-End Web Development',
-      description: 'Creating modern, fluid, and responsive user interfaces with React, JavaScript, and seamless integration of animated mockups.',
-      icon: '🌐'
+      title: 'Quantitative Analysis & Modeling',
+      description: 'Econometrics, time-series forecasting (ARIMA, Prophet), predictive modeling, customer segmentation, and machine learning (Random Forest, SVM, PCA) for finance and telecom.',
+      icon: '📈'
     },
     {
       id: 2,
-      title: 'Full-Stack Web Development',
-      description: 'End-to-end design of digital solutions, from the user interface down to the database, utilizing robust and secure architectures.',
-      icon: '⚙️'
+      title: 'Data Engineering on the Cloud',
+      description: 'Reliable data products on Microsoft Fabric, Databricks, and Azure: PySpark pipelines, PostgreSQL, data quality checks, and reproducible foundations for reporting.',
+      icon: '☁️'
     },
     {
       id: 3,
-      title: 'Mobile Application Development',
-      description: 'Building high-performance, cross-platform applications ready for iOS and Android using modern frameworks.',
-      icon: '📱'
+      title: 'Generative AI & RAG Systems',
+      description: 'Large language models, agentic assistants, and retrieval-augmented generation with LangChain, from document extraction to enterprise question answering.',
+      icon: '🤖'
     },
     {
       id: 4,
-      title: 'Data Science & Business Analytics',
-      description: 'Unlocking value and modeling complex data: building interactive dashboards, advanced statistical analysis, and predictive models to guide your decisions.',
+      title: 'Decision Support & Governance',
+      description: 'Model governance, responsible AI, and stakeholder-ready insight: Power BI, reproducible research, and cross-functional delivery in Agile / Scrum.',
       icon: '📊'
     }
   ];
 
   return (
     <section className="page services-page">
-      {/* Integration of the universal container for a perfect centered alignment */}
       <div className="container">
-        <h1>My Services</h1>
+        <h1>What I Work On</h1>
+        <p style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto', color: '#555', lineHeight: '1.6' }}>
+          The same mix of economic modeling and production engineering described in my profile:
+          evidence for decisions, built so it can run.
+        </p>
         <div className="services-grid" style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',

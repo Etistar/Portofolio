@@ -51,10 +51,15 @@ const Contact = () => {
               <strong>Email:</strong> zononetienne2009@gmail.com
             </p>
             <p style={{ margin: '5px 0', fontSize: '1.1rem', color: '#333' }}>
-              <strong>Phone:</strong> +1 (343) 558-6485 / + 229 66 55 67 66
+              <strong>Phone:</strong> (343) 558-6485
             </p>
             <p style={{ margin: '5px 0', fontSize: '1.1rem', color: '#0056b3', fontWeight: 'bold' }}>
-              <strong>Location:</strong> Canada (Ottawa)
+              <strong>Location:</strong> Ottawa, Ontario, Canada
+            </p>
+            <p style={{ margin: '8px 0 0', fontSize: '1rem' }}>
+              <a href="https://www.linkedin.com/in/etienne-zonon-0864588a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              {' · '}
+              <a href="https://github.com/Etistar" target="_blank" rel="noopener noreferrer">GitHub</a>
             </p>
           </div>
           

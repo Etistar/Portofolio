@@ -1,85 +1,87 @@
 import React from 'react';
 
 const Projects = () => {
-  const projects = [ 
+  const projects = [
     {
-      id: 0,
-      title: 'Personal Portfolio & Cultural Showcase (Benin)',
-      description: 'A multi-page responsive website designed to introduce my personal background, hobbies, and the cultural heritage of Benin.',
-      role: 'Web Developer',
-      outcome: 'Built a responsive digital identity and structured navigation that delivers an optimal viewing experience across all device screens.',
-      technologies: ['HTML', 'CSS', 'JAVASCRIPT'],
-      demoLink: '/archives/BENIN/index.html',
-     // githubLink: '/archives/BENIN/'
+      id: 1,
+      title: 'Macrofinancial Modeling Framework (BRVM Macrofinance Scout)',
+      description: 'Automated text-mining and macroeconomic modeling for macro-desk research. A text engine using LLMs (Groq / OpenAI) turns financial feeds into structured sentiment, then several models forecast market moves.',
+      role: 'Data Scientist',
+      outcome: 'Net sentiment of +0.44 from the text pipeline. Multiple linear regression reached an R² of 0.68 (money-supply growth and bank capital strength), logistic regression a 68% short-term up-probability, and a random forest a 73% confidence on volatility regimes.',
+      technologies: ['Python', 'OpenAI / Groq', 'NLP', 'Scikit-learn', 'Regression', 'Random Forest']
     },
-    // {
-     //  id: 1,
-     //  title: 'Human Resources Analytics Dashboard',
-     //  description: 'An interactive HR business intelligence project embedding functional corporate metrics, staffing analytics, and organizational charts.',
-     //  role: 'Data Analyst & Developer',
-     //  outcome: 'Successfully bridged business intelligence with web development, enabling dynamic presentation of complex enterprise data frameworks.',
-     //  technologies: ['POWER BI', 'MS FABRIC', 'HTML', 'CSS', 'JAVASCRIPT'],
-      // demoLink: '/archives/HR Analytics/index.html',
-      // githubLink: '/archives/HR Analytics/'
-    // },
     {
       id: 2,
-      title: 'BugSmasher Interactive App',
-      description: 'A specialized application built as part of an academic assignment, featuring dynamic event-handling to track specific data coordinates.',
-      role: 'Front-End Developer',
-      outcome: 'Mastered core JavaScript DOM manipulation, event capturing, and logical validations required for interactive web tools.',
-      technologies: ['HTML5', 'JAVASCRIPT', 'CSS'],
-      demoLink: '/archives/assignment 6/index.html',
-      //githubLink: '/archives/assignment 6/'
+      title: 'Agentic AI Telegram Assistant & Document Processor',
+      description: 'A local, open-source RAG conversational assistant using Ollama and Qdrant, with run tracking in MLflow, plus a document pipeline that turns unstructured scans into validated JSON and Excel.',
+      role: 'AI Engineer',
+      outcome: 'Localized question answering over private documents, and an extraction flow with Qwen2.5-Coder that checks discrepancies before export.',
+      technologies: ['Ollama', 'Qdrant', 'LangChain', 'MLflow', 'Python', 'Git']
     },
     {
       id: 3,
-      title: 'PS5 Interactive Location Map',
-      description: 'A dedicated web application integrating visual maps to trace and plot regional PlayStation 5 inventory and hub locations.',
-      role: 'Front-End Developer',
-      outcome: 'Successfully implemented API-driven visual elements, improving frontend asset delivery and geolocation mapping rendering.',
-      technologies: ['HTML5', 'JAVASCRIPT', 'CSS', 'MAP'],
-      demoLink: '/archives/PS5/assignment3.html',
-      //githubLink: '/archives/PS5/'
+      title: 'Personal Portfolio & Cultural Showcase (Benin)',
+      description: 'A multi-page responsive site introducing a personal background and the cultural heritage of Benin.',
+      role: 'Web Developer',
+      outcome: 'Responsive layout and clear navigation that stay readable across screen sizes.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      demoLink: '/archives/BENIN/index.html'
     },
     {
       id: 4,
-      title: 'Pacific Trails Resort - Case Study',
-      description: 'Comprehensive development of a multi-page hotel and hospitality website following strict mockups and design documentation.',
+      title: 'BugSmasher Interactive App',
+      description: 'An interactive front end that tracks click coordinates and validates user actions in the browser.',
       role: 'Front-End Developer',
-      outcome: 'Delivered clean, standard-compliant semantic markup achieving 100% cross-browser compatibility and structural alignment.',
-      technologies: ['HTML', 'CSS'],
-      demoLink: '/archives/ch10pacific/index.html',
-      //githubLink: '/archives/ch10pacific/'
+      outcome: 'DOM events, input checks, and a small interactive loop implemented in plain JavaScript.',
+      technologies: ['HTML5', 'JavaScript', 'CSS'],
+      demoLink: '/archives/assignment 6/index.html'
     },
     {
       id: 5,
-      title: 'Dynamic Restaurant Management Platform',
-      description: 'A complete full-stack web application designed for interactive food ordering, menu alterations, and automated live analytics graphing.',
+      title: 'PS5 Interactive Location Map',
+      description: 'A visual map for plotting regional PlayStation 5 retail locations.',
+      role: 'Front-End Developer',
+      outcome: 'Image-map interaction that links each region to a retailer page.',
+      technologies: ['HTML5', 'JavaScript', 'CSS'],
+      demoLink: '/archives/PS5/assignment3.html'
+    },
+    {
+      id: 6,
+      title: 'Pacific Trails Resort',
+      description: 'A multi-page hospitality site built to a fixed visual specification.',
+      role: 'Front-End Developer',
+      outcome: 'Semantic pages with a shared stylesheet and a consistent layout across the resort sections.',
+      technologies: ['HTML', 'CSS'],
+      demoLink: '/archives/ch10pacific/index.html'
+    },
+    {
+      id: 7,
+      title: 'Restaurant Management Platform',
+      description: 'A multi-page restaurant site for the menu, orders, gallery, and contact flow, with live charting of order activity.',
       role: 'Full-Stack Developer',
-      outcome: 'Engineered a secure relational CRUD system connecting backend state workflows to optimized chart representations in real-time.',
-      technologies: ['Node.js', 'Express', 'React', 'Chart.js', 'PostgreSQL'],
-      demoLink: '/archives/EtienneZ_301559049_A3/about.html',
-      //githubLink: '/archives/EtienneZ_301559049_A3/'
+      outcome: 'Connected ordering screens to charted activity so the menu, orders, and summary stay in one place.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Chart.js'],
+      demoLink: '/archives/restaurant-platform/about.html'
     }
   ];
 
   return (
     <section className="page projects-page">
       <div className="container">
-        <h1>My Projects</h1>
+        <h1>Projects & Research Demonstrations</h1>
+        <p style={{ textAlign: 'center', maxWidth: '740px', margin: '10px auto 0', color: '#555', lineHeight: '1.6' }}>
+          Research prototypes from my data-science work, followed by selected web projects.
+        </p>
         <div className="projects-grid">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div key={project.id} className="project-card" style={{ padding: '25px' }}>
-              {/* Title includes automatic numbering */}
-              <h3>Project {index + 1}: {project.title}</h3>
+              <h3>{project.title}</h3>
               <p className="project-desc" style={{ marginTop: '10px', marginBottom: '12px' }}>{project.description}</p>
-              
-              {/* Technical Badges Section */}
+
               <div className="project-tags" style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '15px' }}>
-                {project.technologies.map((tech, techIdx) => (
-                  <span 
-                    key={techIdx} 
+                {project.technologies.map((tech) => (
+                  <span
+                    key={tech}
                     style={{
                       backgroundColor: '#eef2f7',
                       color: '#0056b3',
@@ -97,46 +99,29 @@ const Projects = () => {
 
               <p className="project-role"><strong>Role:</strong> {project.role}</p>
               <p className="project-outcome"><strong>Outcome:</strong> {project.outcome}</p>
-              
-              <div className="project-actions" style={{ display: 'flex', gap: '10px', marginTop: '20px' }}>
-                <a 
-                  href={project.githubLink}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  style={{
-                    flex: 1,
-                    textAlign: 'center',
-                    padding: '10px',
-                    backgroundColor: '#24292e',
-                    color: 'white',
-                    textDecoration: 'none',
-                    borderRadius: '4px',
-                    fontWeight: 'bold',
-                    fontSize: '0.9rem'
-                  }}
-                >
-                  GitHub Code
-                </a>
 
-                <a 
-                  href={project.demoLink}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  style={{
-                    flex: 1,
-                    textAlign: 'center',
-                    padding: '10px',
-                    backgroundColor: '#0056b3',
-                    color: 'white',
-                    textDecoration: 'none',
-                    borderRadius: '4px',
-                    fontWeight: 'bold',
-                    fontSize: '0.9rem'
-                  }}
-                >
-                  View Demo
-                </a>
-              </div>
+              {project.demoLink && (
+                <div className="project-actions" style={{ display: 'flex', gap: '10px', marginTop: '20px' }}>
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      flex: 1,
+                      textAlign: 'center',
+                      padding: '10px',
+                      backgroundColor: '#0056b3',
+                      color: 'white',
+                      textDecoration: 'none',
+                      borderRadius: '4px',
+                      fontWeight: 'bold',
+                      fontSize: '0.9rem'
+                    }}
+                  >
+                    View Demo
+                  </a>
+                </div>
+              )}
             </div>
           ))}
         </div>

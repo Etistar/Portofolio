@@ -4,17 +4,18 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <section className="page home-page">
-      {/* Add the container class here to center the welcome block */}
       <div className="container">
         <div className="hero">
-          <h1>Welcome to My Portfolio</h1>
-          <p className="hero-subtitle">Passionate Web Developer</p>
+          <h1>Etienne ZONON</h1>
+          <p className="hero-subtitle">Senior Data Scientist & Statistician-Economist</p>
           <p className="mission">
-            My mission is to create innovative and accessible digital experiences 
-            that transform ideas into reality.
+            I apply econometrics, machine learning, and production-grade AI
+            to forecasting, macrofinancial analysis, and decision support
+            in finance and telecom. Fully bilingual (English / French),
+            based in Ottawa.
           </p>
           <Link to="/about" className="btn btn-primary">
-            Learn More
+            View my profile
           </Link>
         </div>
       </div>

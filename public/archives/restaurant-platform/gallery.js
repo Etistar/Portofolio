@@ -1,6 +1,6 @@
 /*
   Author     : Etienne ZONON
-  Student ID : 301559049
+  Student ID : 
   Date       : 31/05/2026
   Course     : COMP125 – Assignment 3
   File       : gallery.js
