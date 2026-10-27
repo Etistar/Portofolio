@@ -7,12 +7,13 @@ const Home = () => {
       <div className="container">
         <div className="hero">
           <h1>Etienne ZONON</h1>
-          <p className="hero-subtitle">Senior Data Scientist & Statistician-Economist</p>
+          <p className="hero-subtitle">Senior Data Scientist, Statistician-Economist & Full-Stack Software Engineer</p>
           <p className="mission">
             I apply econometrics, machine learning, and production-grade AI
             to forecasting, macrofinancial analysis, and decision support
-            in finance and telecom. Fully bilingual (English / French),
-            based in Ottawa.
+            in finance and telecom. I also build full-stack software and AI
+            products, from the interface through the API to the data and the models.
+            Fully bilingual (English / French), based in Ottawa.
           </p>
           <Link to="/about" className="btn btn-primary">
             View my profile

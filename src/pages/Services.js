@@ -22,6 +22,12 @@ const Services = () => {
     },
     {
       id: 4,
+      title: 'Full-Stack Software Engineering & AI',
+      description: 'End-to-end products that combine a user interface, an API, a database, and AI features: React, JavaScript, Node.js, FastAPI, and Python in one delivery.',
+      icon: '🧩'
+    },
+    {
+      id: 5,
       title: 'Decision Support & Governance',
       description: 'Model governance, responsible AI, and stakeholder-ready insight: Power BI, reproducible research, and cross-functional delivery in Agile / Scrum.',
       icon: '📊'
@@ -33,8 +39,8 @@ const Services = () => {
       <div className="container">
         <h1>What I Work On</h1>
         <p style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto', color: '#555', lineHeight: '1.6' }}>
-          The same mix of economic modeling and production engineering described in my profile:
-          evidence for decisions, built so it can run.
+          Economic modeling, full-stack software engineering, and AI in the same profile:
+          evidence for decisions, and the applications that carry it.
         </p>
         <div className="services-grid" style={{
           display: 'grid',

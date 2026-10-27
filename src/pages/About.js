@@ -84,7 +84,7 @@ const About = () => {
           <div className="about-content-text" style={{ width: '100%' }}>
             <h2 style={{ fontSize: '1.8rem', color: '#333', marginBottom: '5px' }}>Etienne ZONON</h2>
             <p className="role" style={{ fontSize: '1.2rem', color: '#0056b3', fontWeight: 'bold', marginBottom: '8px' }}>
-              Senior Data Scientist and Statistician-Economist
+              Senior Data Scientist, Statistician-Economist & Full-Stack Software Engineer
             </p>
             <p style={{ color: '#666', marginTop: 0, marginBottom: '24px' }}>
               Ottawa, Ontario · Permanent Resident of Canada · English / French
@@ -95,7 +95,7 @@ const About = () => {
                 English
               </p>
               <p style={{ color: '#555', margin: 0, textAlign: 'justify', lineHeight: '1.6' }}>
-                Senior Data Scientist and Statistician-Economist with over 6 years of experience applying advanced econometrics, machine learning, and emerging AI technologies to support evidence-based decision-making. Proven track record in designing predictive models, macrofinancial analysis, and time-series forecasting within financial and telecom sectors. Expert at leading cross-functional analytical initiatives and translating complex quantitative research into strategic insights for technical and non-technical stakeholders. Fully bilingual (English/French), blending strong economic modeling with production-grade engineering in cloud-native AI systems.
+                Senior Data Scientist and Statistician-Economist with over 6 years of experience applying advanced econometrics, machine learning, and emerging AI technologies to support evidence-based decision-making. Proven track record in designing predictive models, macrofinancial analysis, and time-series forecasting within financial and telecom sectors. I also work as a full-stack software engineer in software engineering and AI: I design and ship applications from the user interface to the API, the database, and the models behind them. Expert at leading cross-functional analytical initiatives and translating complex quantitative research into strategic insights for technical and non-technical stakeholders. Fully bilingual (English/French), blending strong economic modeling with production-grade engineering in cloud-native AI systems.
               </p>
             </div>
 
@@ -104,7 +104,7 @@ const About = () => {
                 Français
               </p>
               <p style={{ color: '#555', margin: 0, textAlign: 'justify', lineHeight: '1.6' }}>
-                Scientifique de données senior et ingénieur statisticien-économiste, avec plus de 6 ans d'expérience dans l'application de l'économétrie avancée, de l'apprentissage automatique et des technologies d'IA émergentes à la décision. Parcours confirmé en modèles prédictifs, analyse macrofinancière et prévision de séries temporelles, dans la finance et les télécoms. Habitué à conduire des initiatives analytiques transverses et à traduire une recherche quantitative complexe en éclairages stratégiques, pour des publics techniques comme non techniques. Pleinement bilingue (anglais/français), j'allie la modélisation économique à une ingénierie de production sur des systèmes d'IA natifs du cloud.
+                Scientifique de données senior et ingénieur statisticien-économiste, avec plus de 6 ans d'expérience dans l'application de l'économétrie avancée, de l'apprentissage automatique et des technologies d'IA émergentes à la décision. Parcours confirmé en modèles prédictifs, analyse macrofinancière et prévision de séries temporelles, dans la finance et les télécoms. Je pratique aussi le génie logiciel et l'IA en profil fullstack : je conçois et livre des applications, de l'interface jusqu'à l'API, la base de données et les modèles. Habitué à conduire des initiatives analytiques transverses et à traduire une recherche quantitative complexe en éclairages stratégiques, pour des publics techniques comme non techniques. Pleinement bilingue (anglais/français), j'allie la modélisation économique à une ingénierie de production sur des systèmes d'IA natifs du cloud.
               </p>
             </div>
 
@@ -112,6 +112,7 @@ const About = () => {
               <h3 style={{ marginBottom: '12px', color: '#111' }}>Core qualifications</h3>
               <ul style={{ color: '#555', lineHeight: '1.7', paddingLeft: '18px', margin: 0 }}>
                 <li><strong>Quantitative analysis:</strong> econometrics, statistical modeling, time-series forecasting (ARIMA, Prophet), predictive modeling, customer segmentation, machine learning (Random Forest, SVM, PCA).</li>
+                <li><strong>Software engineering & AI:</strong> full-stack applications across the interface, API, database, and models — React, JavaScript, Node.js, FastAPI, and Python.</li>
                 <li><strong>Emerging AI:</strong> generative AI, large language models, agentic architectures, retrieval-augmented generation (RAG), natural language processing.</li>
                 <li><strong>Tools and cloud:</strong> Python, PySpark, R, SQL (Oracle T-SQL, PostgreSQL), Databricks, Microsoft Fabric, Azure, Git/GitHub.</li>
                 <li><strong>Delivery:</strong> reproducible research, model governance, responsible AI, stakeholder engagement, Agile/Scrum.</li>
