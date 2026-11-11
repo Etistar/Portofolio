@@ -1,46 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { useLang } from '../i18n/LanguageContext';
+
+const stack = [
+  'PostgreSQL', 'Oracle T-SQL', 'SSIS', 'Power BI', 'Python', 'R',
+  'FastAPI', 'React', 'JavaScript', 'C#', 'HTML/CSS', 'Git', 'Linux',
+  'Microsoft Fabric', 'Databricks', 'Agile / Scrum'
+];
 
 const Services = () => {
-  const services = [
-    {
-      id: 1,
-      title: 'Quantitative Analysis & Modeling',
-      description: 'Econometrics, time-series forecasting (ARIMA, Prophet), predictive modeling, customer segmentation, and machine learning (Random Forest, SVM, PCA) for finance and telecom.',
-      icon: '📈'
-    },
-    {
-      id: 2,
-      title: 'Data Engineering on the Cloud',
-      description: 'Reliable data products on Microsoft Fabric, Databricks, and Azure: PySpark pipelines, PostgreSQL, data quality checks, and reproducible foundations for reporting.',
-      icon: '☁️'
-    },
-    {
-      id: 3,
-      title: 'Generative AI & RAG Systems',
-      description: 'Large language models, agentic assistants, and retrieval-augmented generation with LangChain, from document extraction to enterprise question answering.',
-      icon: '🤖'
-    },
-    {
-      id: 4,
-      title: 'Full-Stack Software Engineering & AI',
-      description: 'End-to-end products that combine a user interface, an API, a database, and AI features: React, JavaScript, Node.js, FastAPI, and Python in one delivery.',
-      icon: '🧩'
-    },
-    {
-      id: 5,
-      title: 'Decision Support & Governance',
-      description: 'Model governance, responsible AI, and stakeholder-ready insight: Power BI, reproducible research, and cross-functional delivery in Agile / Scrum.',
-      icon: '📊'
-    }
-  ];
+  const { t } = useLang();
 
   return (
     <section className="page services-page">
       <div className="container">
-        <h1>What I Work On</h1>
-        <p style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto', color: '#555', lineHeight: '1.6' }}>
-          Economic modeling, full-stack software engineering, and AI in the same profile:
-          evidence for decisions, and the applications that carry it.
+        <h1 style={{ textAlign: 'center' }}>{t.services.title}</h1>
+        <p style={{ textAlign: 'center', maxWidth: '760px', margin: '0 auto', color: '#555', lineHeight: '1.6' }}>
+          {t.services.intro}
         </p>
         <div className="services-grid" style={{
           display: 'grid',
@@ -48,8 +24,8 @@ const Services = () => {
           gap: '25px',
           marginTop: '30px'
         }}>
-          {services.map((service) => (
-            <div key={service.id} className="service-card" style={{
+          {t.services.items.map((service) => (
+            <div key={service.title} className="service-card" style={{
               background: '#f8f9fa',
               padding: '30px 20px',
               borderRadius: '8px',
@@ -63,6 +39,44 @@ const Services = () => {
               <p style={{ color: '#666', lineHeight: '1.5', fontSize: '0.95rem', margin: 0 }}>{service.description}</p>
             </div>
           ))}
+        </div>
+
+        <div style={{ maxWidth: '860px', margin: '48px auto 0', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '1.35rem', marginBottom: '16px', color: '#111' }}>{t.services.tools}</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
+            {stack.map((item) => (
+              <span
+                key={item}
+                style={{
+                  backgroundColor: '#eef2f7',
+                  color: '#0056b3',
+                  padding: '6px 12px',
+                  borderRadius: '50px',
+                  fontSize: '0.85rem',
+                  fontWeight: '600',
+                  border: '1px solid #d0e1fd'
+                }}
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+          <Link
+            to="/contact"
+            className="btn btn-primary"
+            style={{
+              display: 'inline-block',
+              marginTop: '28px',
+              padding: '12px 24px',
+              backgroundColor: '#0056b3',
+              color: 'white',
+              textDecoration: 'none',
+              borderRadius: '6px',
+              fontWeight: 'bold'
+            }}
+          >
+            {t.services.cta}
+          </Link>
         </div>
       </div>
     </section>

@@ -2,18 +2,20 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes, faHome, faUser, faCode, faGraduationCap, faBriefcase, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { useLang } from '../i18n/LanguageContext';
 
-const Navbar = () => { //  On a enlevé ({ navigate }) d'ici
+const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const location = useLocation();
+  const { lang, setLang, t } = useLang();
 
   const navItems = [
-    { path: '/', label: 'Home', icon: faHome },
-    { path: '/about', label: 'About', icon: faUser },
-    { path: '/projects', label: 'Projects', icon: faCode },
-    { path: '/education', label: 'Education', icon: faGraduationCap },
-    { path: '/services', label: 'Services', icon: faBriefcase },
-    { path: '/contact', label: 'Contact', icon: faEnvelope },
+    { path: '/', label: t.nav.home, icon: faHome },
+    { path: '/about', label: t.nav.about, icon: faUser },
+    { path: '/projects', label: t.nav.projects, icon: faCode },
+    { path: '/education', label: t.nav.education, icon: faGraduationCap },
+    { path: '/services', label: t.nav.services, icon: faBriefcase },
+    { path: '/contact', label: t.nav.contact, icon: faEnvelope },
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -28,22 +30,44 @@ const Navbar = () => { //  On a enlevé ({ navigate }) d'ici
           <span className="logo-text">Etienne<span>ZONON</span></span>
         </Link>
 
-        <button className="menu-toggle" onClick={toggleMenu} aria-label="Menu">
-          {isOpen ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
-        </button>
+        <div className="nav-end">
+          <div className={`nav-links ${isOpen ? 'open' : ''}`}>
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={isActive(item.path) ? 'active' : ''}
+                onClick={() => setIsOpen(false)}
+              >
+                <FontAwesomeIcon icon={item.icon} />
+                <span>{item.label}</span>
+              </Link>
+            ))}
+          </div>
 
-        <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-          {navItems.map((item) => (
-            <Link 
-              key={item.path}
-              to={item.path}
-              className={isActive(item.path) ? 'active' : ''}
-              onClick={() => setIsOpen(false)}
-            >
-              <FontAwesomeIcon icon={item.icon} />
-              <span>{item.label}</span>
-            </Link>
-          ))}
+          <div className="nav-actions">
+            <div className="lang-switch" role="group" aria-label={t.nav.language}>
+              <button
+                type="button"
+                className={lang === 'fr' ? 'active' : ''}
+                onClick={() => setLang('fr')}
+                aria-pressed={lang === 'fr'}
+              >
+                FR
+              </button>
+              <button
+                type="button"
+                className={lang === 'en' ? 'active' : ''}
+                onClick={() => setLang('en')}
+                aria-pressed={lang === 'en'}
+              >
+                EN
+              </button>
+            </div>
+            <button className="menu-toggle" onClick={toggleMenu} aria-label="Menu">
+              {isOpen ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
+            </button>
+          </div>
         </div>
       </div>
     </nav>

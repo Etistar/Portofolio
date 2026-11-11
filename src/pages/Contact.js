@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useLang } from '../i18n/LanguageContext';
 
 const Contact = () => {
   const navigate = useNavigate();
+  const { t } = useLang();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -27,7 +29,7 @@ const Contact = () => {
       {/* Force global text centering */}
       <div className="container" style={{ textAlign: 'center' }}>
         
-        <h1 style={{ marginBottom: '30px' }}>Contact Me</h1>
+        <h1 style={{ marginBottom: '30px' }}>{t.contact.title}</h1>
         
         {/* Same centered profile box as on the About page */}
         <div className="contact-profile-box" style={{
@@ -48,13 +50,13 @@ const Contact = () => {
             borderBottom: '1px solid #eee' 
           }}>
             <p style={{ margin: '5px 0', fontSize: '1.1rem', color: '#333' }}>
-              <strong>Email:</strong> zononetienne2009@gmail.com
+              <strong>{t.contact.email}</strong> zononetienne2009@gmail.com
             </p>
             <p style={{ margin: '5px 0', fontSize: '1.1rem', color: '#333' }}>
-              <strong>Phone:</strong> (343) 558-6485
+              <strong>{t.contact.phone}</strong> (343) 558-6485
             </p>
             <p style={{ margin: '5px 0', fontSize: '1.1rem', color: '#0056b3', fontWeight: 'bold' }}>
-              <strong>Location:</strong> Ottawa, Ontario, Canada
+              <strong>{t.contact.location}</strong> Ottawa, Ontario, Canada
             </p>
             <p style={{ margin: '8px 0 0', fontSize: '1rem' }}>
               <a href="https://www.linkedin.com/in/etienne-zonon-0864588a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -66,7 +68,7 @@ const Contact = () => {
           {/* Adjusted and spaced form */}
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group" style={{ marginBottom: '20px' }}>
-              <label htmlFor="firstName" style={{ display: 'block', marginBottom: '6px', fontWeight: 'bold' }}>First Name *</label>
+              <label htmlFor="firstName" style={{ display: 'block', marginBottom: '6px', fontWeight: 'bold' }}>{t.contact.firstName}</label>
               <input
                 type="text"
                 id="firstName"
@@ -79,7 +81,7 @@ const Contact = () => {
             </div>
             
             <div className="form-group" style={{ marginBottom: '20px' }}>
-              <label htmlFor="lastName" style={{ display: 'block', marginBottom: '6px', fontWeight: 'bold' }}>Last Name *</label>
+              <label htmlFor="lastName" style={{ display: 'block', marginBottom: '6px', fontWeight: 'bold' }}>{t.contact.lastName}</label>
               <input
                 type="text"
                 id="lastName"
@@ -92,7 +94,7 @@ const Contact = () => {
             </div>
             
             <div className="form-group" style={{ marginBottom: '20px' }}>
-              <label htmlFor="phone" style={{ display: 'block', marginBottom: '6px', fontWeight: 'bold' }}>Phone Number</label>
+              <label htmlFor="phone" style={{ display: 'block', marginBottom: '6px', fontWeight: 'bold' }}>{t.contact.phoneField}</label>
               <input
                 type="tel"
                 id="phone"
@@ -104,7 +106,7 @@ const Contact = () => {
             </div>
             
             <div className="form-group" style={{ marginBottom: '20px' }}>
-              <label htmlFor="email" style={{ display: 'block', marginBottom: '6px', fontWeight: 'bold' }}>Email *</label>
+              <label htmlFor="email" style={{ display: 'block', marginBottom: '6px', fontWeight: 'bold' }}>{t.contact.emailField}</label>
               <input
                 type="email"
                 id="email"
@@ -117,7 +119,7 @@ const Contact = () => {
             </div>
             
             <div className="form-group" style={{ marginBottom: '25px' }}>
-              <label htmlFor="message" style={{ display: 'block', marginBottom: '6px', fontWeight: 'bold' }}>Message *</label>
+              <label htmlFor="message" style={{ display: 'block', marginBottom: '6px', fontWeight: 'bold' }}>{t.contact.message}</label>
               <textarea
                 id="message"
                 name="message"
@@ -148,7 +150,7 @@ const Contact = () => {
                   transition: 'background-color 0.2s'
                 }}
               >
-                Send Message
+                {t.contact.send}
               </button>
             </div>
           </form>

@@ -4,16 +4,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 // L'enveloppe déménage ici :
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
-
+import { useLang } from '../i18n/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLang();
+
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-info">
-          <p>© {new Date().getFullYear()} Etienne ZONON. Tous droits réservés.</p>
-          <p>Portfolio développé avec React</p>
+          <p>© {new Date().getFullYear()} Etienne ZONON. {t.footer.rights}</p>
+          <p>{t.footer.built}</p>
         </div>
         <div className="footer-social">
           <a href="https://github.com/Etistar" target="_blank" rel="noopener noreferrer">
