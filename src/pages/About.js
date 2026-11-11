@@ -38,8 +38,11 @@ const About = () => {
 
           <div className="about-content-text" style={{ width: '100%' }}>
             <h2 style={{ fontSize: '1.8rem', color: '#333', marginBottom: '5px' }}>Etienne ZONON</h2>
-            <p className="role" style={{ fontSize: '1.2rem', color: '#0056b3', fontWeight: 'bold', marginBottom: '8px' }}>
+            <p className="role" style={{ fontSize: '1.25rem', color: '#0b3a6e', fontWeight: '700', marginBottom: '4px' }}>
               {about.role}
+            </p>
+            <p style={{ fontSize: '1rem', color: '#475569', fontWeight: 600, marginBottom: '8px' }}>
+              {about.roleDetail}
             </p>
             <p style={{ color: '#666', marginTop: 0, marginBottom: '24px' }}>
               {about.location}
@@ -95,6 +98,41 @@ const About = () => {
             <p style={{ marginTop: '22px', color: '#555' }}>
               <strong>{about.languages}</strong> {about.languagesValue}
             </p>
+
+            <div style={{ marginTop: '28px', textAlign: 'left' }}>
+              <h3 style={{ marginBottom: '8px', color: '#111' }}>{about.diplomaTitle}</h3>
+              <p style={{ margin: '0 0 4px', color: '#111', fontWeight: 700 }}>{about.diplomaName}</p>
+              <p style={{ margin: '0 0 14px', color: '#0056b3' }}>{about.diplomaPlace}</p>
+              <iframe
+                title={about.diplomaName}
+                src="/diplome/ISSEA.pdf"
+                style={{
+                  width: '100%',
+                  height: '520px',
+                  border: '1px solid #e5e7eb',
+                  borderRadius: '8px',
+                  background: '#f8fafc'
+                }}
+              />
+              <a
+                href="/diplome/ISSEA.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-block',
+                  marginTop: '14px',
+                  padding: '10px 18px',
+                  backgroundColor: '#ffffff',
+                  color: '#0056b3',
+                  border: '2px solid #0056b3',
+                  textDecoration: 'none',
+                  borderRadius: '6px',
+                  fontWeight: 'bold'
+                }}
+              >
+                {about.diplomaButton}
+              </a>
+            </div>
 
             <a
               href="/diplome/resume.pdf"

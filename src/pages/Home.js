@@ -9,7 +9,9 @@ const Home = () => {
     <section className="page home-page">
       <div className="container">
         <div className="hero">
+          <p className="hero-kicker">Ottawa</p>
           <h1>Etienne ZONON</h1>
+          <p className="hero-title-role">{t.home.title}</p>
           <p className="hero-subtitle">{t.home.subtitle}</p>
           <p className="mission">{t.home.mission}</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center', marginBottom: '1.75rem' }}>

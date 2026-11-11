@@ -33,7 +33,7 @@ body {
 /* Navigation */
 .navbar {
   background-color: #ffffff;
-  box-shadow: var(--box-shadow);
+  border-bottom: 1px solid #e2e8f0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -59,7 +59,7 @@ body {
 }
 
 .logo-badge {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: #0b3a6e;
   color: white;
   padding: 0.25rem;
   font-size: 1.5rem;

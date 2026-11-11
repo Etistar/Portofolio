@@ -12,6 +12,7 @@ export const LanguageProvider = ({ children }) => {
   useEffect(() => {
     window.localStorage.setItem('lang', lang);
     document.documentElement.lang = lang;
+    document.title = copy[lang].pageTitle;
     const meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute('content', copy[lang].meta);
   }, [lang]);

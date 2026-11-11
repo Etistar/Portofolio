@@ -6,7 +6,8 @@ const Education = () => {
   const labels = {
     program: t.education.viewProgram,
     attestation: t.education.viewAttestation,
-    certificate: t.education.viewCertificate
+    certificate: t.education.viewCertificate,
+    diploma: t.education.viewDiploma
   };
 
   return (

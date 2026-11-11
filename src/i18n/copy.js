@@ -1,6 +1,7 @@
 export const copy = {
   fr: {
-    meta: 'Etienne ZONON — Spécialiste des données, développeur BI et Analytics. Pipelines ETL/ELT, SQL, Power BI et applications React. Ottawa.',
+    pageTitle: 'Etienne ZONON — Ingénieur statisticien-économiste',
+    meta: 'Etienne ZONON — Ingénieur statisticien-économiste, spécialiste des données et développeur BI. Pipelines ETL/ELT, SQL, Power BI. Ottawa.',
     nav: {
       home: 'Accueil',
       about: 'Profil',
@@ -15,6 +16,7 @@ export const copy = {
       built: 'Portfolio développé avec React'
     },
     home: {
+      title: 'Ingénieur statisticien-économiste',
       subtitle: 'Spécialiste des données · Développeur BI & Analytics',
       mission: 'Plus de 6 ans à concevoir, modéliser et automatiser des pipelines de données (ETL/ELT) dans des environnements réglementés, notamment les télécoms. SQL avancé, schémas en étoile et tableaux de bord Power BI, avec un développement applicatif en Python, C#, JavaScript et React. Basé à Ottawa. Français langue maternelle, anglais professionnel.',
       highlights: [
@@ -29,7 +31,8 @@ export const copy = {
     },
     about: {
       title: 'À propos de moi',
-      role: 'Spécialiste des données · Développeur BI & Analytics',
+      role: 'Ingénieur statisticien-économiste',
+      roleDetail: 'Spécialiste des données · Développeur BI & Analytics',
       location: 'Ottawa, Ontario · (343) 558-6485 · Français (langue maternelle) · Anglais professionnel',
       portrait: 'Portrait de Etienne ZONON',
       profileLabel: 'Profil',
@@ -47,6 +50,10 @@ export const copy = {
       tools: 'Outils :',
       languages: 'Langues :',
       languagesValue: 'français — langue maternelle · anglais — professionnel',
+      diplomaTitle: 'Diplôme',
+      diplomaName: 'Ingénieur statisticien-économiste',
+      diplomaPlace: 'ISSEA, Cameroun · Sept. 2015 – Juill. 2018',
+      diplomaButton: 'Voir le diplôme',
       download: 'Télécharger mon CV',
       jobs: [
         {
@@ -172,10 +179,11 @@ export const copy = {
       viewProgram: 'Voir le programme',
       viewAttestation: 'Voir l’attestation',
       viewCertificate: 'Voir le certificat',
+      viewDiploma: 'Voir le diplôme',
       items: [
         { title: 'Génie logiciel et intelligence artificielle', institution: 'Collège Centennial, Canada', period: 'Janv. 2026 – Août 2026', credential: 'Python, JavaScript, React, C#, Linux, HTML/CSS et fondements du génie logiciel.', link: 'https://centennialcollege.ca', kind: 'program' },
         { title: 'Maîtrise en science des données et Big Data', institution: 'INP-HB, Côte d’Ivoire', period: 'Sept. 2018 – Déc. 2019', credential: 'International Data Science Institute. Équivalence WES disponible.', link: '/diplome/diploma-IDSI.pdf', kind: 'attestation' },
-        { title: 'Ingénieur statisticien-économiste', institution: 'ISSEA, Cameroun', period: 'Sept. 2015 – Juill. 2018', credential: 'Méthodes quantitatives, macroéconomie, modélisation économétrique et prévision. Accent sur la modélisation statistique appliquée à la finance et à l’assurance.', link: '/diplome/ISSEA.pdf', kind: 'attestation' },
+        { title: 'Ingénieur statisticien-économiste', institution: 'ISSEA, Cameroun', period: 'Sept. 2015 – Juill. 2018', credential: 'Diplôme d’ingénieur statisticien-économiste. Méthodes quantitatives, macroéconomie, modélisation économétrique et prévision, avec un accent sur la finance et l’assurance.', link: '/diplome/ISSEA.pdf', kind: 'diploma' },
         { title: 'Analyste de données', institution: 'NPower Canada', period: '—', credential: 'Programme Analyste de données.', link: 'https://npowercanada.ca', kind: 'program' },
         { title: 'Technicien supérieur en statistiques', institution: 'ENEAM, Université d’Abomey-Calavi, Bénin', period: '2012 – 2013', credential: 'Attestation de diplôme, technicien supérieur en statistiques.', link: '/diplome/ENEAM.pdf', kind: 'attestation' },
         { title: 'Microsoft Certified : Fabric Data Engineer Associate (DP-700)', institution: 'Microsoft', period: '2025', credential: 'Ingénierie de données sur Microsoft Fabric.', link: '/diplome/DP700.pdf', kind: 'certificate' },
@@ -203,7 +211,8 @@ export const copy = {
     }
   },
   en: {
-    meta: 'Etienne ZONON — Data specialist and BI & Analytics developer. ETL/ELT pipelines, SQL, Power BI, and React applications. Ottawa.',
+    pageTitle: 'Etienne ZONON — Statistician-Economist Engineer',
+    meta: 'Etienne ZONON — Statistician-economist engineer, data specialist, and BI developer. ETL/ELT pipelines, SQL, Power BI. Ottawa.',
     nav: {
       home: 'Home',
       about: 'Profile',
@@ -218,6 +227,7 @@ export const copy = {
       built: 'Portfolio built with React'
     },
     home: {
+      title: 'Statistician-Economist Engineer',
       subtitle: 'Data Specialist · BI & Analytics Developer',
       mission: 'More than 6 years designing, modeling, and automating data pipelines (ETL/ELT) in regulated environments, including telecom. Advanced SQL, star schemas, and Power BI dashboards, together with application development in Python, C#, JavaScript, and React. Based in Ottawa. French is my first language, and I work in professional English.',
       highlights: [
@@ -232,7 +242,8 @@ export const copy = {
     },
     about: {
       title: 'About me',
-      role: 'Data Specialist · BI & Analytics Developer',
+      role: 'Statistician-Economist Engineer',
+      roleDetail: 'Data Specialist · BI & Analytics Developer',
       location: 'Ottawa, Ontario · (343) 558-6485 · French (native) · Professional English',
       portrait: 'Portrait of Etienne ZONON',
       profileLabel: 'Profile',
@@ -250,6 +261,10 @@ export const copy = {
       tools: 'Tools:',
       languages: 'Languages:',
       languagesValue: 'French — native · English — professional',
+      diplomaTitle: 'Diploma',
+      diplomaName: 'Statistician-Economist Engineer',
+      diplomaPlace: 'ISSEA, Cameroon · Sept. 2015 – July 2018',
+      diplomaButton: 'View diploma',
       download: 'Download my resume',
       jobs: [
         {
@@ -375,10 +390,11 @@ export const copy = {
       viewProgram: 'View program',
       viewAttestation: 'View attestation',
       viewCertificate: 'View certificate',
+      viewDiploma: 'View diploma',
       items: [
         { title: 'Software Engineering and Artificial Intelligence', institution: 'Centennial College, Canada', period: 'Jan. 2026 – Aug. 2026', credential: 'Python, JavaScript, React, C#, Linux, HTML/CSS, and software engineering foundations.', link: 'https://centennialcollege.ca', kind: 'program' },
         { title: 'Master’s in Data Science and Big Data', institution: 'INP-HB, Côte d’Ivoire', period: 'Sept. 2018 – Dec. 2019', credential: 'International Data Science Institute. WES equivalency available.', link: '/diplome/diploma-IDSI.pdf', kind: 'attestation' },
-        { title: 'Statistician-Economist Engineer', institution: 'ISSEA, Cameroon', period: 'Sept. 2015 – July 2018', credential: 'Quantitative methods, macroeconomics, econometric modeling, and forecasting. Focus on statistical modeling applied to finance and insurance.', link: '/diplome/ISSEA.pdf', kind: 'attestation' },
+        { title: 'Statistician-Economist Engineer', institution: 'ISSEA, Cameroon', period: 'Sept. 2015 – July 2018', credential: 'Statistician-economist engineering diploma. Quantitative methods, macroeconomics, econometric modeling, and forecasting, with a focus on finance and insurance.', link: '/diplome/ISSEA.pdf', kind: 'diploma' },
         { title: 'Data Analyst', institution: 'NPower Canada', period: '—', credential: 'Data Analyst program.', link: 'https://npowercanada.ca', kind: 'program' },
         { title: 'Senior Statistics Technician', institution: 'ENEAM, Université d’Abomey-Calavi, Benin', period: '2012 – 2013', credential: 'Diploma attestation, senior statistics technician.', link: '/diplome/ENEAM.pdf', kind: 'attestation' },
         { title: 'Microsoft Certified: Fabric Data Engineer Associate (DP-700)', institution: 'Microsoft', period: '2025', credential: 'Data engineering on Microsoft Fabric.', link: '/diplome/DP700.pdf', kind: 'certificate' },

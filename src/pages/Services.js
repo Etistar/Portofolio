@@ -26,16 +26,15 @@ const Services = () => {
         }}>
           {t.services.items.map((service) => (
             <div key={service.title} className="service-card" style={{
-              background: '#f8f9fa',
-              padding: '30px 20px',
-              borderRadius: '8px',
-              textAlign: 'center',
-              boxShadow: '0 4px 6px rgba(0,0,0,0.05)',
-              transition: 'transform 0.2s, box-shadow 0.2s',
-              borderTop: '4px solid #0056b3'
+              background: '#ffffff',
+              padding: '24px 22px',
+              borderRadius: '10px',
+              textAlign: 'left',
+              boxShadow: '0 1px 2px rgba(15, 23, 42, 0.06)',
+              border: '1px solid #e2e8f0',
+              borderTop: '3px solid #0b3a6e'
             }}>
-              <div className="service-icon" style={{ fontSize: '2.5rem', marginBottom: '15px' }}>{service.icon}</div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '12px', color: '#333' }}>{service.title}</h3>
+              <h3 style={{ fontSize: '1.15rem', marginBottom: '12px', color: '#0f172a', letterSpacing: '-0.01em' }}>{service.title}</h3>
               <p style={{ color: '#666', lineHeight: '1.5', fontSize: '0.95rem', margin: 0 }}>{service.description}</p>
             </div>
           ))}
